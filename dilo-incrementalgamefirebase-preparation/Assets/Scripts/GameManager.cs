@@ -133,7 +133,7 @@ public class GameManager : MonoBehaviour
 
     public void AddGold (double value)
     {
-        TotalGold += value;
+        UserDataManager.Progress.Gold += value;
         GoldInfo.text = $"Gold: { UserDataManager.Progress.Gold.ToString("0") }";
         UserDataManager.Save();
     }
